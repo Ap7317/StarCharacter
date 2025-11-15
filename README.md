@@ -2,6 +2,8 @@
 
 A responsive web application that displays Star Wars characters using the [SWAPI (Star Wars API)](https://swapi.dev/). Built with React, TypeScript, Tailwind CSS, and Vite.
 
+🚀 **[Live Demo](https://starcharacter.vercel.app/)**
+
 ## How to Run the Project
 
 ### Prerequisites
