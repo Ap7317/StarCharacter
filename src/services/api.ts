@@ -3,9 +3,11 @@ import type { Person, Planet, Species, Film, PaginatedResponse } from '../types'
 const BASE_URL = 'https://swapi.dev/api';
 
 class ApiError extends Error {
-  constructor(message: string, public status?: number) {
+  status?: number;
+  constructor(message: string, status?: number) {
     super(message);
     this.name = 'ApiError';
+    this.status = status;
   }
 }
 
