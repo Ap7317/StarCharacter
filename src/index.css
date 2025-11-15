@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-star-wars-yellow: #FFE81F;
+}
+
+body {
+  background-color: rgb(17 24 39);
+  color: rgb(243 244 246);
+  min-height: 100vh;
+}
+
+.btn-primary {
+  background-color: var(--color-star-wars-yellow);
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(234 179 8);
+}
+
+.btn-secondary {
+  background-color: rgb(55 65 81);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(75 85 99);
+}
