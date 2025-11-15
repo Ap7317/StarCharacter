@@ -9,9 +9,14 @@ interface CharacterCardProps {
 export default function CharacterCard({ character, onClick }: CharacterCardProps) {
   const characterId = getIdFromUrl(character.url);
 
+  const handleClick = () => {
+    console.log('Card clicked:', character.name);
+    onClick();
+  };
+
   return (
     <div
-      onClick={onClick}
+      onClick={handleClick}
       className="character-card bg-gray-800 rounded-lg overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl"
     >
       <div className="relative h-48 overflow-hidden">

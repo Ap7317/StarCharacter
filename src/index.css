@@ -35,3 +35,24 @@ body {
 .btn-secondary:hover {
   background-color: rgb(75 85 99);
 }
+
+/* Character card styles */
+.character-card {
+  transition: transform 200ms ease-in-out;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
